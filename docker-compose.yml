@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: ${MONGO_DB}
+    ports:
+      - "${MONGO_PORT}:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: always
+    depends_on:
+      - mongo
+    env_file: .env
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      MONGO_URI: mongodb://${MONGO_HOST}:${MONGO_PORT}/${MONGO_DB}
+    command: ["node", "index.js"]
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: ${VITE_API_URL}
+    container_name: frontend
+    restart: always
+    ports:
+      - "80:80"
+    env_file: .env
+
+volumes:
+  mongo-data:

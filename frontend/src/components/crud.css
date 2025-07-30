@@ -1,0 +1,116 @@
+/* Root div should take full width and center content */
+#root {
+  display: flex;
+  justify-content: center;   /* ✅ Horizontal center */
+  width: 100%;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;         /* ✅ Center horizontally */
+  justify-content: flex-start; /* ✅ Keep content near top */
+  min-height: 100vh;
+  padding-top: 40px;           /* Space from top */
+  font-family: Arial, sans-serif;
+ /*  background-color: #f9fbfd;    Light background for better look */
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;     /* ✅ Center form horizontally */
+  flex-wrap: wrap;             /* Responsive for small screens */
+}
+
+.form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #008cba;
+}
+
+/* Table Styles */
+.crud-table {
+  width: 80%;                  /* ✅ Keep table centered with some margin */
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 0 auto;              /* ✅ Center the table */
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Small shadow for look */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.crud-table th, .crud-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.crud-table th {
+  background: #f2f2f2;
+  font-weight: bold;
+}
+
+.crud-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Buttons in Table */
+button.edit {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.edit:hover {
+  background-color: #0b7dda;
+}
+
+button.delete:hover {
+  background-color: #da190b;
+}
