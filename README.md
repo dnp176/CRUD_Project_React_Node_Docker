@@ -13,18 +13,6 @@ This project is a simple **CRUD application** built using **React (Frontend)**, 
 
 ---
 
-## 📂 Project Structure
-CRUD_Project_React_Node_Docker/
-│
-├── backend/ # Node.js + Express API
-├── frontend/ # React + Vite App
-├── docker-compose.yml
-├── .env # Environment variables
-└── README.md
-
-
----
-
 ## 🔑 Environment Variables
 Create a `.env` file in the root directory with the following:
 PORT=5000
@@ -49,8 +37,8 @@ VITE_API_URL=http://<your-public-IP>/api
 ## 🚀 Getting Started
 
 ### 1. **Clone the Repository**
-git clone https://github.com/dnp176/CRUD_Project_React_Node_Docker.git
-cd CRUD_Project_React_Node_Docker
+- git clone https://github.com/dnp176/CRUD_Project_React_Node_Docker.git
+- cd CRUD_Project_React_Node_Docker
 
 
 ### 2. **Set up Environment**
@@ -88,7 +76,6 @@ VITE_API_URL=http://your-cloud-ip/api
 
 - Rebuild and run in detached mode:
 
-- 
 ---
 
 ## 🛠 Tech Stack
