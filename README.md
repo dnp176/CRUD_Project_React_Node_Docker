@@ -15,13 +15,8 @@ This project is a simple **CRUD application** built using **React (Frontend)**, 
 
 ## 🔑 Environment Variables
 Create a `.env` file in the root directory with the following:
-PORT=5000
-MONGO_HOST=mongo
-MONGO_PORT=27017
-MONGO_DB=mydb
-MONGO_COLLECTION=items
-NODE_ENV=development
-VITE_API_URL=http://<your-server-ip-or-localhost>/api
+PORT=5000 MONGO_HOST=mongo MONGO_PORT=27017 MONGO_DB=mydb MONGO_COLLECTION=items NODE_ENV=development VITE_API_URL=http://<your-server-ip-or-localhost>/api
+
 
 
 ### ⚠ Important:
