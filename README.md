@@ -16,7 +16,7 @@ This project is a simple **CRUD application** built using **React (Frontend)**, 
 ## 🔑 Environment Variables
 Create a `.env` file in the root directory with the following:
 `
-PORT=5000
+PORT=5000 \n
 MONGO_HOST=mongo
 MONGO_PORT=27017
 MONGO_DB=mydb
